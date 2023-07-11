@@ -1,37 +1,34 @@
-let choice = prompt ("Ingrese 1 = Celsius -> Fahrenheit \nIngrese 2 = Fahrenheit -> Celsius")
+let choice = parseInt(prompt("Ingrese 1 = Celsius -> Fahrenheit \nIngrese 2 = Fahrenheit -> Celsius"))
 
 
-while (choice != 1 && choice != 2) {
-    choice = parseInt(prompt ("Por favor elija una de las 2 opciones:\n1 = Celsius -> Fahrenheit \n2 = Fahrenheit -> Celsius"), 10);
+while (choice != 1 && choice != 2){
+    choice = prompt ("Por favor elija una de las 2 opciones:\n1 = Celsius -> Fahrenheit \n2 = Fahrenheit -> Celsius");
     
 }
 
-let temperature = parseInt(prompt ("Ingrese Temperatura"), 10);
+let temperature = prompt ("Ingrese Temperatura");
 
 
 while (isNaN(temperature)) {
-    temperature = parseInt(prompt ("Valor invalido, por favor ingrese una temperatura."), 10);
+    temperature = prompt ("Valor invalido, por favor ingrese una temperatura.");
     
 }
 
-if (choice = 1){
+function celToFar (){
+    const result = (temperature * 1.8) + 32; 
+    alert ("La temperatura " + temperature + "°C " + "en Fahrenheit es de " + result + "°F");
+}
+
+
+function farToCel(){
+    const result = (temperature - 32) / 1.8;
+    alert ("La temperatura " + temperature + "°F " + "en Celsius es de " + result + "°C");
+}
+
+
+if (choice === 1){
     celToFar()
 }
 else {
     farToCel()
 }
-
-
-function celToFar (){
-    result = temperature * 1.8 + 32; 
-    console.log ("La temperatura " + temperature + "C " + "en Fahrenheit es de " + result + "F");
-}
-
-
-function farToCel(){
-    result = temperature / 1.8 - 32;
-    console.log ("La temperatura " + temperature + "F " + "en Celsius es de " + result + "C");
-}
-
-alert("Apreta F12 para ver el Resultado")
-

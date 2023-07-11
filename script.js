@@ -24,13 +24,13 @@ else {
 
 function celToFar (){
     result = temperature * 1.8 + 32; 
-    console.log ("La temperatura " + temperature + "C " + "en fahrenheit es de " + result + "F");
+    console.log ("La temperatura " + temperature + "C " + "en Fahrenheit es de " + result + "F");
 }
 
 
 function farToCel(){
     result = temperature / 1.8 - 32;
-    console.log ("La temperatura " + temperature + "F " + "en celsius es de " + result + "C");
+    console.log ("La temperatura " + temperature + "F " + "en Celsius es de " + result + "C");
 }
 
 alert("Apreta F12 para ver el Resultado")

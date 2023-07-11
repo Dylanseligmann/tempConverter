@@ -1,4 +1,4 @@
-let choice = parseInt(prompt("Ingrese 1 = Celsius -> Fahrenheit \nIngrese 2 = Fahrenheit -> Celsius"))
+let choice = prompt("Ingrese 1 = Celsius -> Fahrenheit \nIngrese 2 = Fahrenheit -> Celsius")
 
 
 while (choice != 1 && choice != 2){
@@ -26,7 +26,7 @@ function farToCel(){
 }
 
 
-if (choice === 1){
+if (choice == 1){
     celToFar()
 }
 else {

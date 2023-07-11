@@ -1,8 +1,8 @@
-let choice = prompt ("Ingrese 1 = Celsius -> fahrenheit \nIngrese 2 = fahrenheit -> Celsius")
+let choice = prompt ("Ingrese 1 = Celsius -> Fahrenheit \nIngrese 2 = Fahrenheit -> Celsius")
 
 
 while (choice != 1 && choice != 2) {
-    choice = parseInt(prompt ("Por favor elija una de las 2 opciones:\n1 = Celsius -> fahrenheit \n2 = fahrenheit -> Celsius"), 10);
+    choice = parseInt(prompt ("Por favor elija una de las 2 opciones:\n1 = Celsius -> Fahrenheit \n2 = Fahrenheit -> Celsius"), 10);
     
 }
 

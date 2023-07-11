@@ -2,7 +2,7 @@ let choice = prompt("Ingrese 1 = Celsius -> Fahrenheit \nIngrese 2 = Fahrenheit 
 
 
 while (choice != 1 && choice != 2){
-    choice = prompt ("Por favor elija una de las 2 opciones:\n1 = Celsius -> Fahrenheit \n2 = Fahrenheit -> Celsius");
+    choice = prompt ("Por favor seleccione una de las 2 opciones:\n1 = Celsius -> Fahrenheit \n2 = Fahrenheit -> Celsius");
     
 }
 

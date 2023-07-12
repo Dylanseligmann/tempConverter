@@ -15,13 +15,13 @@ while (isNaN(temperature)) {
 }
 
 function celToFar (){
-    const result = (temperature * 1.8) + 32; 
+    const result = ((temperature * 1.8) + 32 ).toFixed(0); 
     alert ("La temperatura " + temperature + "°C " + "en Fahrenheit es de " + result + "°F");
 }
 
 
 function farToCel(){
-    const result = (temperature - 32) / 1.8;
+    const result = ((temperature - 32) / 1.8 ).toFixed(1);
     alert ("La temperatura " + temperature + "°F " + "en Celsius es de " + result + "°C");
 }
 
